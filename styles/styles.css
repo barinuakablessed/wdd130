@@ -51,3 +51,10 @@ main img {
 }
 p{padding: 0;}
 
+footer {
+    margin: 15px;
+    border-top: 1px solid #000;
+    background-color: darkblue;
+    text-align: center;
+}
+
