@@ -5,7 +5,7 @@ nav{
 
 
 nav a {
-    
+
     color: white;
     display: block;
     padding: 20px;
@@ -72,9 +72,10 @@ box-sizing: border-box;
   color: #000; 
 }
 aside {
-    width: 20em;
-    text-align: center;
+  position: relative;
+  width: 200px;
 }
+
 main img {
     /* other styles can be placed here */
     float: right;
@@ -83,4 +84,12 @@ aside h2 {
 position: absolute;
 top: 47px;
 left: 150px;
+}
+/* Class Selectors */
+.box {
+  margin: 1rem;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  color: #333;
 }
