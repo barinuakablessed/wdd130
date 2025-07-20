@@ -70,11 +70,7 @@ nav, p, section, article {
   width: 125px;
   margin-left: 1rem;
 }
-a img {
-  text-decoration: none;
-  border: none; /* Optional: removes blue border in some browsers */
-}
 
-a {
+.socialmedia {
   text-decoration: none;
 }
