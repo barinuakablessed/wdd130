@@ -93,10 +93,22 @@ left: 150px;
   background-color: #f9f9f9;
   color: #333;
 }
-header, footer {
-    max-width: 840px;
-    margin: 0 auto;
+
+header {
+  margin: 0 auto;
+  max-width: 840px;
 }
+
+footer {
+  margin: 0 auto;
+  max-width: 840px;
+}
+
+.grid {
+  margin: 0 auto;
+  max-width: 840px;
+}
+
 
 nav {
     background-color: #f2f2f2;
