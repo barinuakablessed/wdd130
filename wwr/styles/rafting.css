@@ -1,4 +1,4 @@
-/* Google Fonts */
+/* Ensure base font and spacing is clean */
 body {
   font-family: 'Roboto', sans-serif;
   margin: 0;
@@ -8,32 +8,22 @@ body {
   background-color: #fff;
 }
 
-/* Layout Container */
-header,
-main,
-footer {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 1rem;
-}
-
-/* Header Grid Layout */
+/* Header styling to match wireframe layout */
 header {
-  display: grid;
-  grid-template-columns: auto 1fr;
+  display: flex;
   align-items: center;
-  gap: 1rem;
+  justify-content: space-between;
+  padding: 1rem;
+  max-width: 1000px;
+  margin: auto;
 }
 
 header img {
   height: 60px;
 }
 
-/* Navigation with Flexbox */
 nav {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
   gap: 1rem;
 }
 
@@ -41,122 +31,83 @@ nav a {
   text-decoration: none;
   color: #333;
   font-weight: bold;
-  transition: color 0.3s ease;
 }
 
-nav a:hover {
+nav a:hover,
+nav a.active {
   color: #0077cc;
 }
 
-/* Hero Section */
-.hero {
-  position: relative;
-  text-align: center;
+/* Main layout spacing */
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1rem;
 }
 
-.hero img {
-  width: 100%;
-  height: auto;
-  display: block;
+/* Contact info and map */
+.contact-info {
+  margin-bottom: 2rem;
 }
 
-.hero h1 {
-  position: absolute;
-  top: 30%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  font-family: 'Playfair Display', serif;
-  font-size: 3rem;
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 1rem 2rem;
-  border-radius: 10px;
+.contact-info h2 {
+  margin-bottom: 0.5rem;
 }
 
-.hero article {
-  margin-top: 1rem;
-}
-
-.hero article img {
-  width: 100%;
-  max-width: 400px;
-  display: block;
-  margin: 1rem auto;
-}
-
-/* History Section */
-.history {
-  margin: 2rem 0;
-}
-
-.history-content {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  align-items: center;
-}
-
-.history-content img {
-  width: 100%;
-  max-width: 400px;
-  border-radius: 8px;
-}
-
-/* Mission & Values */
-.mission,
-.values {
-  margin: 2rem 0;
-}
-
-.values ul {
-  list-style-type: square;
-  padding-left: 1.5rem;
-}
-
-/* Adventure Gallery */
-.adventures {
-  margin: 2rem 0;
-}
-
-.adventure-gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1rem;
-}
-
-.adventure-gallery img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-}
-
-.adventure-gallery figcaption {
-  text-align: center;
-  margin-top: 0.5rem;
-  font-weight: bold;
-}
-
-/* Footer Styling */
-footer {
+/* Employees section */
+.employees {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  margin-top: 2rem;
-  border-top: 1px solid #ccc;
-  padding-top: 1rem;
-  font-size: 0.9rem;
-  color: #666;
+  gap: 1rem;
+  margin-bottom: 2rem;
 }
 
-.social-icons {
+.employees figure {
+  text-align: center;
+  flex: 1;
+}
+
+.employees img {
+  width: 100%;
+  max-width: 200px;
+  border-radius: 8px;
+}
+
+/* Contact form styling */
+.contact-form form {
   display: flex;
-  gap: 10px;
+  flex-direction: column;
+  gap: 1rem;
 }
 
-.social-icons img {
-  width: 24px;
-  height: 24px;
+.contact-form input,
+.contact-form textarea,
+.contact-form button {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
+
+.contact-form button {
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #005fa3;
+}
+
+/* Footer to match wireframe */
+footer {
+  margin-top: 3rem;
+  padding: 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+  border-top: 1px solid #ccc;
+}
+
 
 
