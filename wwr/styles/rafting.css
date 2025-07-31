@@ -1,4 +1,4 @@
-/* Ensure base font and spacing is clean */
+/* Base styling */
 body {
   font-family: 'Roboto', sans-serif;
   margin: 0;
@@ -8,7 +8,7 @@ body {
   background-color: #fff;
 }
 
-/* Header styling to match wireframe layout */
+/* Header styling */
 header {
   display: flex;
   align-items: center;
@@ -38,14 +38,18 @@ nav a.active {
   color: #0077cc;
 }
 
-/* Main layout spacing */
+/* Main layout */
 main {
   max-width: 1000px;
   margin: 0 auto;
   padding: 1rem;
 }
 
-/* Contact info and map */
+main h1 {
+  text-align: center;
+}
+
+/* Contact Info Section */
 .contact-info {
   margin-bottom: 2rem;
 }
@@ -54,17 +58,36 @@ main {
   margin-bottom: 0.5rem;
 }
 
-/* Employees section */
+/* Google Map */
+.contact-info iframe {
+  width: 100%;
+  height: 300px;
+  border: none;
+  margin-top: 0.5rem;
+  border-radius: 8px;
+}
+
+/* Employees Section */
+.employees {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.employees h2 {
+  margin-bottom: 1rem;
+}
+
 .employees {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   gap: 1rem;
-  margin-bottom: 2rem;
 }
 
 .employees figure {
   text-align: center;
   flex: 1;
+  max-width: 200px;
 }
 
 .employees img {
@@ -73,7 +96,15 @@ main {
   border-radius: 8px;
 }
 
-/* Contact form styling */
+/* Contact Form Section */
+.contact-form {
+  margin-top: 2rem;
+}
+
+.contact-form h2 {
+  margin-bottom: 1rem;
+}
+
 .contact-form form {
   display: flex;
   flex-direction: column;
@@ -89,6 +120,10 @@ main {
   border-radius: 4px;
 }
 
+.contact-form textarea {
+  resize: vertical;
+}
+
 .contact-form button {
   background-color: #0077cc;
   color: white;
@@ -100,7 +135,7 @@ main {
   background-color: #005fa3;
 }
 
-/* Footer to match wireframe */
+/* Footer */
 footer {
   margin-top: 3rem;
   padding: 1rem;
@@ -108,6 +143,7 @@ footer {
   font-size: 0.9rem;
   border-top: 1px solid #ccc;
 }
+
 
 
 
