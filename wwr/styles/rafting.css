@@ -138,7 +138,7 @@ footer {
 }
 
 footer a {
-  color: #ffeb3b;
+  color: #ffffff; /* Fixed: High contrast white link text */
   display: block;
   margin-top: 0.5rem;
   text-decoration: underline;
