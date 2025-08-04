@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Contact White Water Rafting for questions, reservations, or suggestions.">
-  <meta name="author" content="Barinuaka Blessed Bariagara">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact White Water Rafting for questions, reservations, or suggestions." />
+  <meta name="author" content="Barinuaka Blessed Bariagara" />
   <title>Contact Us - White Water Rafting</title>
 
-  <!-- Google Fonts Preconnect + Font Link -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
- <link rel="stylesheet" href="styles/rafting.css">
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles/rafting.css" />
 </head>
 <body>
   <header>
-    <img src="images/logo.png" alt="Rafting Site Logo">
+    <img src="images/logo.png" alt="Rafting Site Logo" />
     <nav>
       <a href="index.html">Home</a>
       <a href="about.html">About Us</a>
@@ -27,83 +27,66 @@
   <main>
     <h1 class="page-title">Contact Us</h1>
 
-    <!-- Contact Info -->
-    <section class="contact-info">
-      <h2>Company Information</h2>
-      <p><strong>Address:</strong> 123 River Adventure Lane, Rapids City, RC 45678</p>
-      <p><strong>Phone:</strong> +234 812 345 6789</p>
-      <p><strong>Email:</strong> contact@wwrafting.com</p>
+    <!-- Company Info + Map -->
+    <section class="contact-top">
+      <div class="company-info">
+        <h2>Company Information</h2>
+        <p><strong>Address:</strong> 123 River Adventure Lane, Rapids City, RC 45678</p>
+        <p><strong>Phone:</strong> +234 812 345 6789</p>
+        <p><strong>Email:</strong> contact@wwrafting.com</p>
+      </div>
+      <div class="map-box">
+        <h2>Google Map</h2>
+        <iframe
+          class="map-frame"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3171.7965142430364!2d-122.08385178426139!3d37.38605177983121!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb0abce7e3e1f%3A0xa4b8b8937db9c11a!2sGoogleplex!5e0!3m2!1sen!2sus!4v1620000000000!5m2!1sen!2sus"
+          allowfullscreen
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
     </section>
 
-    <!-- Google Map -->
-    <section class="contact-info">
-      <h2>Our Location</h2>
-      <iframe 
-        class="map-frame"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3171.7965142430364!2d-122.08385178426139!3d37.38605177983121!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb0abce7e3e1f%3A0xa4b8b8937db9c11a!2sGoogleplex!5e0!3m2!1sen!2sus!4v1620000000000!5m2!1sen!2sus" 
-        allowfullscreen 
-        loading="lazy" 
-        referrerpolicy="no-referrer-when-downgrade">
-      </iframe>
-    </section>
+    <!-- Team Section -->
+   <section class="employees">
+  <h2 class="team-heading">Meet Our Team</h2>
+  <div class="employees-row">
+    <figure>
+      <img src="images/employee.png" alt="Employee 1">
+      <figcaption>Blessed – Booking Manager</figcaption>
+    </figure>
+    <figure>
+      <img src="images/employee1.jpg" alt="Employee 2">
+      <figcaption>Gift – Lead Raft Guide</figcaption>
+    </figure>
+    <figure>
+      <img src="images/employee3.jpg" alt="Employee 3">
+      <figcaption>Best – Safety Coordinator</figcaption>
+    </figure>
+  </div>
+</section>
 
-    <!-- Employee Section -->
-    <section class="employees">
-      <h2 class="team-heading">Meet Our Team</h2>
-      <figure>
-        <img src="images/employee.png" alt="Employee 1 smiling">
-        <figcaption>Blessed – Booking Manager</figcaption>
-      </figure>
-      <figure>
-        <img src="images/employee1.jpg" alt="Employee 2 happy">
-        <figcaption>Gift – Lead Raft Guide</figcaption>
-      </figure>
-      <figure>
-        <img src="images/employee3.jpg" alt="Employee 3 friendly">
-        <figcaption>Best – Safety Coordinator</figcaption>
-      </figure>
-      <figure>
-        <img src="images/employee4.jpg" alt="Employee 4 helpful">
-        <figcaption>Ray – Trip Planner</figcaption>
-      </figure>
-      <figure>
-        <img src="images/raft-term.png" alt="Rafting team at river">
-        <figcaption>Our Team at the River</figcaption>
-        </figure>
-        <figure>
-        <img src="images/rafting1.jpg" alt="Rafting adventure team">
-       <figcaption>Team Adventure – Rapids Ride</figcaption>
-      </figure>
-    </section>
 
     <!-- Contact Form -->
     <section class="contact-form">
       <h2>Send Us a Message</h2>
       <form action="#" method="post">
         <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
+        <input type="text" id="name" name="name" required />
 
         <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
+        <input type="email" id="email" name="email" required />
 
         <p>Purpose of Message:</p>
-        <label for="general">
-          <input type="radio" id="general" name="purpose" value="general" required> General Inquiry
-        </label><br>
-        <label for="reservation">
-          <input type="radio" id="reservation" name="purpose" value="reservation"> Reservation Question
-        </label><br>
-        <label for="suggestion">
-          <input type="radio" id="suggestion" name="purpose" value="suggestion"> Website Suggestion
-        </label><br>
+        <label><input type="radio" name="purpose" value="general" required /> General Inquiry</label>
+        <label><input type="radio" name="purpose" value="reservation" /> Reservation Question</label>
+        <label><input type="radio" name="purpose" value="suggestion" /> Website Suggestion</label>
 
         <label for="message">Message:</label>
         <textarea id="message" name="message" rows="5" required></textarea>
 
-        <label for="subscribe">
-          <input type="checkbox" id="subscribe" name="subscribe">
-          Please subscribe me to the monthly newsletter
-        </label>
+        <label><input type="checkbox" name="subscribe" /> Please subscribe me to the monthly newsletter</label>
+
         <button type="submit">Send Message</button>
       </form>
     </section>
@@ -111,7 +94,7 @@
 
   <footer>
     <p>&copy; 2025 White Water Rafting | Barinuaka Blessed Bariagara</p>
-    <a href="images/contact-wireframe.png">View Contact Page Wireframe</a>
+    <a href="images/contact-wireframe.png">View Wireframe</a>
   </footer>
 </body>
 </html>
