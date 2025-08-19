@@ -897,12 +897,47 @@ footer {
   padding: 1rem;
 }
 
+
 footer a {
-  color: #ffd700;
-  text-decoration: none;
+  color: #003355; /* Deep navy - passes AA easily */
+  text-decoration: underline; /* Non-color visual cue */
 }
 
 footer a:hover {
+  color: #001a26; /* Almost black for hover */
   text-decoration: underline;
 }
 
+
+/* Stronger contrast for nav links on light backgrounds */
+header[style*="#dcd6f7"] nav a,
+header.about-header nav a,
+header.contact-header nav a {
+  color: #111; /* Darker black */
+}
+
+header[style*="#dcd6f7"] nav a:hover,
+header.about-header nav a:hover,
+header.contact-header nav a:hover {
+  color: #003355; /* Deep navy for strong contrast */
+}
+
+.linkedin-link {
+  color: #0077b5; /* Official LinkedIn blue */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.linkedin-link:hover,
+.linkedin-link:focus {
+  color: #005582; /* Darker blue for contrast */
+  text-decoration: underline;
+}
+
+/* Optional: if background is dark, switch to white text */
+.dark-footer .linkedin-link {
+  color: #ffffff;
+}
+.dark-footer .linkedin-link:hover {
+  color: #cce4f0; /* light blue hover */
+}
